@@ -1,3 +1,4 @@
+// Abstract Class
 public abstract class FootballPlayer {
     protected String name;
     protected int goals;
@@ -9,10 +10,18 @@ public abstract class FootballPlayer {
         this.monthlySalary = monthlySalary;
     }
 
-    public abstract double calculateGoalRate(int matchesPlayed);
+    // Abstract method
+    public abstract double calculateGoalRate();
 
-    public void displayBasicInfo() {
-        System.out.println("Name: " + name);
-        System.out.println("Goals Scored: " + goals);
+    public String getName() {
+        return name;
+    }
+
+    public int getGoals() {
+        return goals;
+    }
+
+    public double getMonthlySalary() {
+        return monthlySalary;
     }
 }
